@@ -36,6 +36,36 @@ apktool d fonbet-6.32.0ru.apk
 apktool d pari-latest.apk
 ```
 
+```
+$ diff pari-latest/AndroidManifest.xml fonbet-6.32.0ru/AndroidManifest.xml
+
+1c1
+< <?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="30" android:compileSdkVersionCodename="11" package="ru.paribet" platformBuildVersionCode="30" platformBuildVersionName="11">
+---
+> <?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="30" android:compileSdkVersionCodename="11" package="ru.bkfon" platformBuildVersionCode="30" platformBuildVersionName="11">
+47c47
+<         <provider android:authorities="ru.paribet" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+---
+>         <provider android:authorities="ru.bkfon" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+62,65c62
+<                 <data android:host="paribet.onelink.me" android:scheme="https"/>
+<                 <data android:host="l.paribet.ru" android:scheme="https"/>
+<                 <data android:host="pari.onelink.ru" android:scheme="https"/>
+<                 <data android:host="l.pari.ru" android:scheme="https"/>
+---
+>                 <data android:host="fonbet.onelink.me" android:scheme="https"/>
+254c251
+<         <provider android:authorities="ru.paribet.FacebookInitProvider" android:exported="false" android:name="com.facebook.internal.FacebookInitProvider"/>
+---
+>         <provider android:authorities="ru.bkfon.FacebookInitProvider" android:exported="false" android:name="com.facebook.internal.FacebookInitProvider"/>
+276,277c273,274
+<         <provider android:authorities="ru.paribet.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+<         <provider android:authorities="ru.paribet.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+---
+>         <provider android:authorities="ru.bkfon.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+>         <provider android:authorities="ru.bkfon.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+```
+
 ### Вміст розпакованих додатків
 | | fon.bet | pari.ru |
 | --- | --- | --- |
