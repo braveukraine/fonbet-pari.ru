@@ -42,23 +42,17 @@ apktool d pari-latest.apk
 | APK filename | [fonbet-6.32.0ru.apk](/mobile/fonbet-6.32.0ru.apk) | [pari-latest.apk](/mobile/pari-latest.apk) |
 | number of files | 48252 | 48172 | 
 | number of directories | 3764 | 3750 |
-| number of identical files | 37562 | > |
+number of identical files - 37562
 
-<details>
-  <summary>Click to expand fonbet-6.32.0ru.apk details !</summary>
-  ## Details for fonbet-6.32.0ru.apk
+#### Details for fonbet-6.32.0ru.apk
   * [AndroidManifest.xml](/mobile/fonbet-6.32.0ru/AndroidManifest.xml)
   * [tree output](/mobile/fonbet-6.32.0ru/tree.txt)
   * [sha512sum](/mobile/fonbet-6.32.0ru/sha512sum.txt)
-</details>
 
-<details>
-  <summary>Click to expand pari-latest.apk details !</summary>
-  ## Details for pari-latest.apk
+#### Details for pari-latest.apk
   * [AndroidManifest.xml](/mobile/pari-latest/AndroidManifest.xml)
   * [tree output](/mobile/pari-latest/tree.txt)
   * [sha512sum](/mobile/pari-latest/sha512sum.txt)
-</details>
 
 
 ## Мобільний додаток iOS
