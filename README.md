@@ -42,7 +42,7 @@ apktool d pari-latest.apk
 | APK filename | [fonbet-6.32.0ru.apk](/mobile/fonbet-6.32.0ru.apk) | [pari-latest.apk](/mobile/pari-latest.apk) |
 | number of files | 48252 | 48172 | 
 | number of directories | 3764 | 3750 |
-| number of identical files | 37562 |
+| number of identical files | 37562 | > |
 
 <details>
   <summary>Click to expand fonbet-6.32.0ru.apk details !</summary>
