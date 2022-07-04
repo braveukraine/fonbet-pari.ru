@@ -27,7 +27,7 @@
 
 ## Мобільний додаток Android
 
-Мобільні додатки для Android були скачані на сторінці (https://www.pari.ru/apps/) та (https://www.fon.bet/apps/) 
+Мобільні додатки для Android були скачані на сторінці [https://www.pari.ru/apps/](https://www.pari.ru/apps/) та [https://www.fon.bet/apps/](https://www.fon.bet/apps/) 
 
 Додатки було розпаковано за допомогою інструмента [apktool](https://ibotpeaches.github.io/Apktool/) 
 
