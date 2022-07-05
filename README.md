@@ -30,7 +30,7 @@
 
 |  API | fon.bet POST URI | pari.ru POST URI|
 | --- | --- | --- |
-| registration - реєстрація | cps/superRegistration/createProcess | /cps/superRegistration/createProcess | 
+| registration - реєстрація | /cps/superRegistration/createProcess | /cps/superRegistration/createProcess | 
 | login - логін | /session/loginByPhone | /session/loginByPhone | 
 | password reset - відновлення паролю | /client/restorePassword/createProcessWithCaptcha | /client/restorePassword/createProcessWithCaptcha |
 | events - список спортивних подій |  /events/list | /events/list |
@@ -139,7 +139,7 @@ pari-latest/lib
 5 directories, 13 files
 ```
 
-* fon.bet - fonbet-6.32.0ru.apk *
+*fon.bet - fonbet-6.32.0ru.apk*
 
 ```
 $ tree fonbet-6.32.0ru/lib 
