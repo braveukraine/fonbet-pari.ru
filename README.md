@@ -37,6 +37,16 @@
 | [core-js 3.8.1](https://github.com/zloirock/core-js/releases/tag/v3.8.1) | [core-js 3.8.1](https://github.com/zloirock/core-js/releases/tag/v3.8.1) |
 
 
+### Request Map - збіг у запитах до ресурсів CDN (secure|clientspi|origin)-resources.com у обох сайтів 
+
+#### fon.bet https://requestmap.herokuapp.com/render/220706_BiDc14_5EN/
+![fon.bet request map](/scr/fon.bet-requestmap.png)
+
+#### pari.ru https://requestmap.herokuapp.com/render/220705_BiDcHA_4DM/
+![pari.ru request map](/scr/pari.ru-requestmap.png)
+
+
+
 ### CDN провайдери повний збіг :white_check_mark: 
 
 | | fon.bet | pari.ru |
