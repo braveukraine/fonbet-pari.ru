@@ -1,8 +1,8 @@
 # Порівняння fon.bet та pari.ru
-Порівняння технологічного стеку веб-сайтів, бекенду та мобільних додатків на прикладі двох російських eGaming операторів [fon.bet](https://fon.bet) та [pari.ru](https://pari.ru)
+Порівняння дизайну, технологічного стеку веб-сайтів, бекенду та мобільних додатків на прикладі двох російських eGaming операторів [fon.bet](https://fon.bet) та [pari.ru](https://pari.ru)
 
 ## Веб-фронтенд
-### Порівняння desktop сайтів 
+### Порівняння дизайну desktop сайтів - повний збіг розташування усіх основних елементів сайту :heavy_check_mark:
 
 Для порівняння розглянемо основні сторінки сайтів і звернемо увагу на розташування елементів дизайну на основних сторінках сайту, а також дизайн та поля форм реєстрації, логіну, відновлення паролю.
 
@@ -23,9 +23,23 @@
 | password recorvery form | ![fon.bet](/scr/fon.bet-passwordrecovery.png) | ![pari.ru](/scr/pari.ru-passwordrecovery.png) |
 | quick games | ![https://www.fon.bet/lobby/](/scr/fon.bet-quickgames.png) | ![https://www.pari.ru/lobby/](/scr/pari.ru-quickgames.png) |
 
+### JS бібліотеки - повний збіг у наборі та версіях бібліотек :heavy_check_mark:
+
+| fon.bet | pari.ru |
+| --- | --- |
+| [React 16.8.6](https://github.com/facebook/react/blob/main/CHANGELOG.md#1686-march-27-2019) | [React 16.8.6](https://github.com/facebook/react/blob/main/CHANGELOG.md#1686-march-27-2019) |
+| [core-js 3.8.1](https://github.com/zloirock/core-js/releases/tag/v3.8.1) | [core-js 3.8.1](https://github.com/zloirock/core-js/releases/tag/v3.8.1) |
 
 
-## Бекенд 
+### CDN провайдери повний збіг :heavy_check_mark: 
+
+| | fon.bet | pari.ru |
+| --- | --- | --- | 
+| resources DNS domain | origin.bk6bba-resources.com | origin.pb06e2-resources.com| 
+| resources host IP | 92.223.124.254 | 92.223.124.254 |
+| resources CDN name | https://edgecenter.ru | https://edgecenter.ru | 
+
+## Бекенд / API сервіси - повний збіг використаних API :heavy_check_mark:
 Для порівняння було використано API запити, які були відправлені із фронтендів сайтів під час реєстрації, логіну, відновлення паролю та отримання списків спортивних подій.
 
 |  API | fon.bet POST URI | pari.ru POST URI|
@@ -37,7 +51,7 @@
 
 У порівняльній таблиці є 100% співпадання API URIs, які використовуються у роботі обох веб-сайтів. 
 
-## Мобільний додаток Android
+## Мобільний додаток Android - повний збіг використовуваних бібліотек та маніфестів :heavy_check_mark:
 
 Мобільні додатки для Android були скачані на офіційних сторінках, призначених для завантаження мобільних додатків [https://www.pari.ru/apps/](https://www.pari.ru/apps/) та [https://www.fon.bet/apps/](https://www.fon.bet/apps/) 
 
@@ -98,7 +112,7 @@ AndroidManifest.xml:                <data android:pathPattern="/.*/verification/
 
 Судячи із diff (порівняння) вище, маніфест файли майже ідентичні. Із 286 рядків у файлах лише 4 відмінності де було змінено посилання на джерела та назви додатку було змінено з *ru.bkfon* на *ru.paribet*. Це свідчить що додатки використовують у своїй роботі однакові бібліотеки, містять однакові конфігурації із незначними відмінностями. 
 
-### Вміст розпакованих додатків
+### Вміст розпакованих додатків - більшість файлів збігаються :heavy_check_mark:
 
 | | fon.bet | pari.ru |
 | --- | --- | --- |
@@ -110,7 +124,7 @@ AndroidManifest.xml:                <data android:pathPattern="/.*/verification/
 * Кількість абсолютно ідентичних файлів у .APK = 37562 шт.
 * Усе свідчить, що додатки використовують абсолютно однакові бібліотеки (нижче). Відмінності у графічних файлах (графіці) та текстових рядках (повідомленнях у додатку), підлаштованих під відповідний бренд.
 
-#### Порівняння використовуваних бібліотек в APK файлах
+#### Порівняння використовуваних бібліотек в APK файлах - повний збіг :heavy_check_mark:
 
 *pari.ru - pari-latest.apk* 
 
@@ -176,7 +190,7 @@ fonbet-6.32.0ru/lib
   * [tree output](/mobile/pari-latest/tree.txt)
   * [sha512sum](/mobile/pari-latest/sha512sum.txt)
 
-## Мобільний додаток iOS
+## Мобільний додаток iOS - повний збіг використовуваних фреймворків та бібліотек :heavy_check_mark:
 
 У порівняні було використано мобільні додатки для iOS, які наразі доступні у AppleStore (за посиланнями на офіційних сайтах компаній)
 * pari.ru https://apps.apple.com/ru/app/pari-ставки-на-спорт/id1296163413
@@ -184,7 +198,7 @@ fonbet-6.32.0ru/lib
 
 Додатки було встановленно на iOS телефон і після цього було порівнняно їх вміст.
 
-### Порівняння вмісту бінарних файлів
+### Порівняння вмісту бінарних файлів - повний збіг :heavy_check_mark:
 Аналіз за допомогою `ios info binary` показує, що додатки використовують однакові бінарні файли. Окрім цього додаток Paribet / pari.ru містить 7 бінарних файлів з префіксом Fonbet.
 
 ![pari.ru binary info](/mobile/pari-ru-ios/binaries.png)
@@ -194,7 +208,7 @@ fonbet-6.32.0ru/lib
 Це означає що додатки містять однакову кодову базу і не відрізняються по функціоналу. Різниця заключається в конфігурації, вбудованою в додатки графічними файлами і текстами повідомлень.
 
 
-### Використовувані Frameworks
+### Використовувані Frameworks повний збіг :heavy_check_mark:
 
 У процесі аналізу було виявилено, що обидва додатки використовують одні і ті ж Frameworks у кількості 367 шт. (списки Frameworks нижче не відсортовані).
 
@@ -954,7 +968,7 @@ SetupAssistantSupport             com.apple.setupandmigration.SetupAssistantSupp
 ![fon.bet](/mobile/fon-bet-ios/http-requests.png)
 
 
-### Обидва додатки використовують однаковий набір вбудованих шрифтів (Fonts)
+### Обидва додатки використовують однаковий набір вбудованих шрифтів :heavy_check_mark:
 
 ```
 UIAppFonts =     (
