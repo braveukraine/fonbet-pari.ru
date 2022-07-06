@@ -47,8 +47,16 @@
 
 
 
-### CDN провайдери повний збіг :white_check_mark: 
+### Hosting та CDN провайдери повний збіг :white_check_mark: 
 
+#### Використовуються два різні (російські) провайдери для захисту від DDoS аттак :x:
+| | fon.bet | pari.ru |
+| --- | --- | --- | 
+| resources DNS domain | fon.bet  | www.pari.ru| 
+| resources host IP | 185.169.155.31 | 178.248.236.169 |
+| resources CDN name | SERVICEPIPE | QRATOR | 
+
+#### використовується той самий (російський) CDN провайдер :white_check_mark:
 | | fon.bet | pari.ru |
 | --- | --- | --- | 
 | resources DNS domain | origin.bk6bba-resources.com | origin.pb06e2-resources.com| 
